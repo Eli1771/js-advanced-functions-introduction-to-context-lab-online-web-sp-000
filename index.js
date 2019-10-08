@@ -59,16 +59,7 @@ function wagesEarnedOnDate(emp, date) {
 
 function allWagesFor(emp) {
   let dates = emp.timeInEvents.map(t => t.date);
-  console.log('name: ' + emp.firstName + emp.familyName);
-  console.log('');
-  return dates.reduce((r, date, i) => {
-    console.log('---' + i + '.---');
-    console.log('current total: ' + r);
-    console.log('date: ' + date);
-    console.log('wages earned: ' + wagesEarnedOnDate(emp, date));
-    return r + wagesEarnedOnDate(emp, date)
-    console.log('total so far: ' + (r + wagesEarnedOnDate(emp, date)));
-  }, 0);
+  return dates.reduce((r, date, i) => {return r + wagesEarnedOnDate(emp, date)}, 0);
 }
 
 function findEmployeeByFirstName(empRecords, name) {
