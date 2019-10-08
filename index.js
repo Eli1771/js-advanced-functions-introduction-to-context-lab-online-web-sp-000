@@ -68,7 +68,7 @@ function allWagesFor(emp) {
     console.log('wages earned: ' + wagesEarnedOnDate(emp, date));
     r + wagesEarnedOnDate(emp, date)
     console.log('total so far: ' + (r + wagesEarnedOnDate(emp, date)));
-  });
+  }, 0);
 }
 
 function findEmployeeByFirstName(empRecords, name) {
