@@ -59,7 +59,7 @@ function wagesEarnedOnDate(emp, date) {
 
 function allWagesFor(emp) {
   let dates = emp.timeInEvents.map(t => t.date);
-  return dates.reduce((r, date, i) => {return r + wagesEarnedOnDate(emp, date)}, 0);
+  return dates.reduce((r, date) => {return r + wagesEarnedOnDate(emp, date)}, 0);
 }
 
 function findEmployeeByFirstName(empRecords, name) {
@@ -67,5 +67,5 @@ function findEmployeeByFirstName(empRecords, name) {
 }
 
 function calculatePayroll(empRecords) {
-  
+  empRecords.reduce
 }
