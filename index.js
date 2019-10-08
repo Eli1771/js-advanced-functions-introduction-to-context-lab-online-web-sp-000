@@ -59,8 +59,7 @@ function wagesEarnedOnDate(emp, date) {
 
 function allWagesFor(emp) {
   let dates = emp.timeInEvents.map(t => t.date);
-  console.log(emp.timeInEvents[0]);
-  console.log(wagesEarnedOnDate(emp, emp.timeInEvents[0].date));
+  console.log('name: ' + emp.firstName + emp.familyName);
   return dates.reduce((r, date) => {wagesEarnedOnDate(emp, date) + r});
 }
 
