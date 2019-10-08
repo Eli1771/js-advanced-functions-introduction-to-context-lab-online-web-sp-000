@@ -62,6 +62,7 @@ function allWagesFor(emp) {
   console.log('name: ' + emp.firstName + emp.familyName);
   console.log('');
   return dates.reduce((r, date, i) => {
+    console.log('---' + i + '.---');
     console.log('date: ' + date);
     console.log('wages earned: ' + wagesEarnedOnDate(emp, date));
     wagesEarnedOnDate(emp, date) + r
