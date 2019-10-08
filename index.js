@@ -63,9 +63,7 @@ function allWagesFor(emp) {
 }
 
 function findEmployeeByFirstName(empRecords, name) {
-  let match = empRecords.find(emp => {return emp.firstName === name});
-  console.log(match);
-  return match;
+  return empRecords.find(emp => emp.firstName === name);
 }
 
 function calculatePayroll(empRecords) {
