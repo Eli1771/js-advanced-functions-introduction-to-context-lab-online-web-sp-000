@@ -65,7 +65,7 @@ function allWagesFor(emp) {
     console.log('date: ' + date);
     console.log('wages earned: ' + wagesEarnedOnDate(emp, date));
     wagesEarnedOnDate(emp, date) + r
-    console.log()
+    console.log('total so far: ' + r);
   });
 }
 
